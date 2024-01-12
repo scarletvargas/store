@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Onest } from "next/font/google";
 import "./globals.css";
+import { Header } from "app/components/shared/Header";
+import { Footer } from "app/components/shared/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const onest = Onest({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Store ✨",
@@ -16,7 +21,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`bg-background m-auto w-screen h-screen min-w-xs md:max-w-screen-md xl:max-w-screen-xl 2xl:max-w-screen-2xl ${onest.className}`}
+      >
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
