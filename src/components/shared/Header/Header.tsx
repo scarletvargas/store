@@ -59,7 +59,7 @@ export const Header = () => {
         <button className="md:flex hidden">
           <ShoppingCartIcon className="stroke-text hover:stroke-white" />
         </button>
-        <Button type="link" href="/signin" variant="transparent">
+        <Button type="link" href="/login" variant="transparent">
           Sign In
         </Button>
       </ul>
