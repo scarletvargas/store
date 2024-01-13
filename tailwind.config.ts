@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        '4xl': '32px',
+      },
       colors: {
         'primary': '#AD1FFF',
         'primary-background': '#3C005E',
@@ -16,6 +19,9 @@ const config: Config = {
         'border': '#2B2B2B',
         'text': '#A1A1A1',
         'background': '#0D0D0D',
+      },
+      gridTemplateColumns: {
+        'products': 'repeat(auto-fill, 320px)',
       }
     },
   },
