@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+
+const path = require('path')
+
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        hostname: 'cdn.shopify.com',
+        protocol: 'https',
+      }
+    ]
+  }
+}
 
 module.exports = nextConfig
