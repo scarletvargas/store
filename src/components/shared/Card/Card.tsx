@@ -1,25 +1,28 @@
 import Image from "next/image";
+import Link from "next/link";
 
-interface Props {
-  alt: string;
-  src: string;
-  nameProduct: string;
-  price: number;
+interface ProductCardInterface {
+  product: ProductType;
 }
 
-export const Card = ({ alt, src, nameProduct, price }: Props) => {
+export const Card = ({ product }: ProductCardInterface) => {
   return (
-    <div className="flex flex-col gap-2">
-      <div className="min-h-56 min-w-56 pl-2 border border-border">
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          className="rounded-xl object-cover object-center"
-        />
+    <Link href={`/product/${product.handle}?id=${product.id}`}>
+      <div className="flex flex-col gap-2">
+        <div className="relative min-h-80 h-80 w-80 min-w-80 pl-2 border border-border rounded-xl">
+          <Image
+            src={product.image}
+            alt={product.title}
+            fill
+            loading="eager"
+            className="rounded-xl object-cover object-center"
+          />
+        </div>
+        <h3 className="text-lg/5 text-contrast-light line-clamp-1">
+          {product.title}
+        </h3>
+        <p className="text-lg/5 text-text">$ {product.price} USD</p>
       </div>
-      <h3 className="text-lg/5 text-contrast-light">{nameProduct}</h3>
-      <p className="text-lg/5 text-text">${price} USD</p>
-    </div>
+    </Link>
   );
 };
