@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Button } from "app/components/shared/Button";
-import { CloseIcon, MenuIcon, ShoppingCartIcon } from "app/icons";
+import { CloseIcon, MenuIcon, LogoIcon, ShoppingCartIcon } from "app/icons";
 
 export const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -21,7 +21,13 @@ export const Header = () => {
       }`}
     >
       <div className="flex flex-row justify-between items-center w-full">
-        <h2 className="font-bold text-xl text-white">Store</h2>
+        <Link
+          href="/"
+          className="font-bold text-xl text-white flex flex-row items-center justify-center gap-2"
+        >
+          <LogoIcon className="stroke-primary" />
+          Tech Space
+        </Link>
         <div className="flex flex-row justify-between items-center gap-4">
           <button className="flex md:hidden">
             <ShoppingCartIcon className="stroke-text hover:stroke-white" />
@@ -59,7 +65,7 @@ export const Header = () => {
         <button className="md:flex hidden">
           <ShoppingCartIcon className="stroke-text hover:stroke-white" />
         </button>
-        <Button type="link" href="/signin" variant="transparent">
+        <Button type="link" href="/login" variant="transparent">
           Sign In
         </Button>
       </ul>

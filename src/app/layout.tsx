@@ -10,7 +10,7 @@ const onest = Onest({
 });
 
 export const metadata: Metadata = {
-  title: "Store ✨",
+  title: "Tech Space ✨",
   description: "Welcome to the app store, an ecommerce like no other",
 };
 
