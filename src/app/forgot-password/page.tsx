@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function ForgotPasswordPage() {
   return (
     <div className="flex items-center justify-center w-full h-full">
-      <Form onSubmit="h" nameForm="Sign In">
+      <Form nameForm="Sign In">
         <div className="flex flex-col gap-4">
           <Label htmlFor="">Email*</Label>
           <Input placeholder="Email" type="email" value="" />
