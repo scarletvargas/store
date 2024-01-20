@@ -1,6 +1,6 @@
 interface Props {
   children: React.ReactNode;
-  onSubmit: () => void;
+  onSubmit?: () => void;
   nameForm: string;
 }
 

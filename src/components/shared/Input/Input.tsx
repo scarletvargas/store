@@ -3,7 +3,7 @@ interface Props {
   placeholder: string;
   id?: string;
   value: string;
-  className: string;
+  className?: string;
   onChange?: () => void;
 }
 
