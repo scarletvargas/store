@@ -19,7 +19,7 @@ export const Button = ({
 }: ButtonProps) => {
   const variants: { [key in ButtonProps["variant"]]: string } = {
     black:
-      "bg-black text-white hover:border-white border rounded-lg border-border py-2 px-4",
+      "bg-black text-white rounded-lg py-2 px-4",
     white:
       "bg-white text-black hover:bg-text border rounded-lg border-border py-2 px-4",
     transparent:

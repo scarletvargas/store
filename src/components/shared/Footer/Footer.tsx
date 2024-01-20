@@ -20,9 +20,9 @@ export const Footer = () => {
           <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
             <div className="flex flex-col gap-3">
               <p className="text-text font-medium">Tech Space</p>
-              <Link className="text-white font-medium" href="/faqs">
+              <p className="text-white font-medium">
                 FAQs
-              </Link>
+              </p>
             </div>
             <div className="flex flex-col gap-3">
               <p className="text-text font-medium">Account</p>

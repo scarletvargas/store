@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Onest } from "next/font/google";
-import "./globals.css";
 import { Header } from "app/components/shared/Header";
 import { Footer } from "app/components/shared/Footer";
+import "./globals.css";
 
 const onest = Onest({
   weight: ["400", "500", "600", "700"],
