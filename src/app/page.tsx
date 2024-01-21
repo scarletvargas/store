@@ -5,9 +5,9 @@ import { getProducts } from "app/services/products";
 export default async function Home() {
   const products = await getProducts();
   return (
-    <div>
+    <>
       <Hero products={products} />
       <MainProducts />
-    </div>
+    </>
   );
 }
