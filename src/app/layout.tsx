@@ -21,13 +21,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`bg-background m-auto w-screen h-screen min-w-xs md:max-w-screen-md xl:max-w-screen-xl 2xl:max-w-screen-2xl ${onest.className}`}
-      >
+      <body className={`bg-background h-screen ${onest.className}`}>
         <Header />
-        {children}
+        <div className="border-b border-border border-t">{children}</div>
         <Footer />
       </body>
     </html>
   );
 }
+//bg-background m-auto
+// w-screen h-screen min-w-xs md:max-w-screen-md xl:max-w-screen-xl 2xl:max-w-screen-2xl

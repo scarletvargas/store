@@ -15,8 +15,8 @@ export const Header = () => {
   };
 
   return (
-    <header
-      className={`flex md:flex-row items-center justify-between w-full md:h-[72px] border-b border-border p-4 ${
+    <header className="px-6 sm:px-12 2xl:max-w-screen-2xl mx-auto"><nav
+      className={`flex md:flex-row items-center justify-between w-full md:h-[72px] py-4 ${
         isMenuOpen ? "flex-col gap-6" : "flex-row"
       }`}
     >
@@ -69,6 +69,7 @@ export const Header = () => {
           Sign In
         </Button>
       </ul>
-    </header>
+    </nav></header>
+    
   );
 };
