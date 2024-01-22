@@ -1,4 +1,5 @@
 import { Carousel } from "../Carousel";
+import { Search } from "../Search";
 
 interface Props {
   products: ProductType[];
@@ -17,6 +18,7 @@ export const Hero = ({ products }: Props) => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
               voluptatem libero consectetur possimus et quae.
             </p>
+            <Search products={products} />
           </div>
           <Carousel products={products} />
         </div>
