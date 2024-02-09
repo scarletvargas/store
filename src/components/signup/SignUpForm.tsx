@@ -3,7 +3,7 @@ import { Button, Form, Input, Label } from "app/components/shared";
 
 export const SignUpForm = () => {
   return (
-    <div className="flex items-center justify-center w-full h-full">
+    <div className="flex items-center justify-center w-full h-full py-6 sm:py-12 px-6 sm:px-12 xl:max-w-screen-xl">
       <Form nameForm="Sign Up">
         <div className="flex flex-col gap-4">
           <Label htmlFor="">Email*</Label>

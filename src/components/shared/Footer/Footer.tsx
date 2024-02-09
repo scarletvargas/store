@@ -57,6 +57,7 @@ export const Footer = () => {
       <p className="font-medium text-text pt-6 w-full">
         Created by{" "}
         <Link
+          target="_blank"
           className="text-white"
           href="https://www.linkedin.com/in/scarletvargas-systems-engineer/"
         >

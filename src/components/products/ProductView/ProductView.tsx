@@ -7,7 +7,7 @@ interface ProductViewProps {
 
 export const ProductView = ({ product }: ProductViewProps) => {
   return (
-    <main className="text-white py-6 md:py-12 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12">
+    <main className="text-white grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 py-6 sm:py-12 px-6 sm:px-12 xl:max-w-screen-xl">
       <section className="w-full h-80 sm:h-96 md:h-[500px] relative border border-border rounded-xl">
         <Image
           src={product.image}

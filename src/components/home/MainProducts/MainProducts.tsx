@@ -6,7 +6,7 @@ export const MainProducts = async () => {
   const products = await getMainProducts();
 
   return (
-    <section className="grid grid-cols-products gap-10 justify-center	items-center py-6 sm:py-12 px-6 sm:px-12 mx-auto xl:max-w-screen-xl">
+    <section className="grid grid-cols-products gap-10 justify-center	items-center py-6 sm:py-12 px-6 sm:px-12 xl:max-w-screen-xl">
       {products?.map(
         (product: {
           id: string;
