@@ -3,7 +3,7 @@ import { UserIcon } from "app/icons/UserIcon";
 
 export default function MyAccountPage() {
   return (
-    <div className="flex items-center justify-center flex-col gap-6 w-full h-full">
+    <div className="flex items-center justify-center flex-col gap-6 w-full h-full py-6 sm:py-12 px-6 sm:px-12 xl:max-w-screen-xl">
       <Form nameForm="My Account">
         <div className="flex flex-row gap-4 items-center pl-3">
           <UserIcon

@@ -6,7 +6,7 @@ interface ProductsWrapperProps {
 
 export const ProductsWrapper = ({ products }: ProductsWrapperProps) => {
   return (
-    <div className="grid grid-cols-products gap-10 justify-center	items-center py-6">
+    <div className="grid grid-cols-products gap-10 justify-center	items-center py-6 sm:py-12 px-6 sm:px-12 xl:max-w-screen-xl">
       {products.map((product) => (
         <Card key={product.id} product={product} />
       ))}

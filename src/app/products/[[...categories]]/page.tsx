@@ -26,9 +26,5 @@ export default async function Category(props: CategoryProps) {
     products = await getProducts();
   }
 
-  return (
-    <div className="pt-6">
-      <ProductsWrapper products={products} />
-    </div>
-  );
+  return <ProductsWrapper products={products} />;
 }

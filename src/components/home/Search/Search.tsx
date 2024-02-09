@@ -74,7 +74,7 @@ export const Search = ({ products }: Props) => {
                 <Link
                   href={`/product/${product.handle}?id=${product.id}`}
                   key={product.id}
-                  className="hover:bg-[#F3F3F2] p-2"
+                  className="hover:bg-[#F3F3F2] flex flex-col bg-transparent p-2 w-full"
                 >
                   <p className="text-black line-clamp-1">{product.title}</p>
                   <p className="text-text text-sm line-clamp-1">
